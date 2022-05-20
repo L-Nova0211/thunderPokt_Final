@@ -1,0 +1,9 @@
+[build]
+  base = "packages/web"
+  command = "npx pnpm config set store-dir ./packages/web/node_modules/.pnpm-store && npx pnpm i && npx pnpm -r hh-compile && npx pnpm -r build"
+  publish = "build"
+
+[build.environment]
+  NODE_VERSION = "16"
+  NPM_VERSION = "6"
+  NPM_FLAGS = "--prefix=/dev/null"

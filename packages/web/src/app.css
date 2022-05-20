@@ -1,0 +1,41 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+	@apply text-gray-900;
+}
+
+.btn-primary {
+	@apply w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md hover:text-white bg-yellow-400 hover:bg-yellow-700 md:py-4 md:text-lg md:px-16 disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.btn-secondary {
+	@apply w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-sky-400 hover:bg-sky-700 md:py-4 md:text-lg md:px-16 disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.btn-tertiary {
+	@apply w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-sky-900 hover:bg-sky-700 md:py-4 md:text-lg md:px-16 disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.btn-quaternary {
+	@apply w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-sky-700 bg-sky-100 hover:bg-sky-200 md:py-4 md:text-lg md:px-16 disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.page {
+	@apply bg-slate-100 rounded-lg p-4 md:p-10 my-4 mb-12 lg:mt-16 lg:mb-32 lg:w-1/2 w-full shadow-md;
+}
+
+.stake {
+	@apply bg-slate-100 rounded-lg px-3 py-4 md:p-10 lg:mt-10 lg:w-3/5 w-full shadow-md;
+}
+
+.pagination {
+	@apply max-w-full relative z-0 inline-flex rounded-md shadow-sm -space-x-px;
+}
+
+.pagination .active {
+	@apply z-10 bg-sky-50 border-sky-500 text-sky-600;
+}

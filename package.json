@@ -1,0 +1,9 @@
+{
+  "engines": {
+    "node": ">=16",
+    "pnpm": ">=6"
+  },
+  "dependencies": {
+    "css-loader": "^6.7.1"
+  }
+}
